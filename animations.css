@@ -1,84 +1,67 @@
-@keyframes changing-bg{
-  0%{
-    background-position: 0% 50%;
-    transform: rotate(0deg) scale(1.05);
-  }
-  25%{
-    background-position: 50% 100%;
-    transform: rotate(3deg) scale(1.08);
-  }
-  50%{
-    background-position: 100% 50%;
-    transform: rotate(0deg) scale(1.05);
-  }
-  75%{
-    background-position: 50% 0%;
-    transform: rotate(-3deg) scale(1.08);
-  }
-  100%{
-    background-position: 0% 50%;
-    transform: rotate(0deg) scale(1.05);
-  }
+/* PAGE TRANSITIONS */
+.page {
+  animation: pageIn 0.5s ease;
 }
-
-.aura{
-  animation: grand-entry 0.5s both;
-  animation-timeline: view();
-  animation-range: cover 0% 40%;
-}
-
-@keyframes grand-entry{
-  0%{
+@keyframes pageIn {
+  from {
     opacity: 0;
-    transform: scale(0.8);
+    transform: translateY(16px);
   }
-  100%{
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes from-above{
-  0%{
-    opacity: 0;
-    transform: translateY(-500%);
-  }
-  100%{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
-  
 }
 
-.aura-one{
-  animation: from-left 0.7s 1 0.4s ease-in-out;
-}
-
-.aura-two{
-  animation: from-right 0.7s 1 0.6s ease-in-out;
-}
-
-@keyframes from-left{
-  0%{
+/* Shared reveals */
+@keyframes fadeUp {
+  from {
     opacity: 0;
-    transform: translateX(-500%);
+    transform: translateY(20px);
   }
-  100%{
+  to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
-
-@keyframes from-right{
-  0%{
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    transform: translateX(500%);
   }
-  100%{
+  to {
     opacity: 1;
-    transform: translateX(0);
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(102, 0, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(102, 0, 255, 0);
   }
 }
 
-
-
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.rd1 {
+  transition-delay: 0.1s;
+}
+.rd2 {
+  transition-delay: 0.2s;
+}
+.rd3 {
+  transition-delay: 0.3s;
+}
+.rd4 {
+  transition-delay: 0.4s;
+}

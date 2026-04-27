@@ -3,320 +3,511 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE WEBSTR - Professional Website Development Services</title>
+  <title>Ay — The Webstr</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="images/favicon.png" type="image/">
   <link rel="stylesheet" href="animations.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="hero" id="home">
-    <header class>
-      <div class="logo"><img src="images/logo.png" alt="THE WEBSTR"></div>
-      <nav id="nav">
-        <ul class="navigation">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About Me</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-          <li class="c-btn"><a href="#contact" class="nav-link">Contact Me</a></li>
-          <li class="mini-cta">
-            <a target="_blank" href="https://www.facebook.com/profile.php?1d=61578874030223"><img src="images/facebook-svgrepo-com (1).png" alt="THE WEBSTR"></a>
-            <a target="_blank" href="https://www.instagram.com/_th_webstr?igsh=MWFjeXVzNDBka2diMw=="><img src="images/instagram-167-svgrepo-com.png" alt="THE WEBSTR"></a>
-            <a target="_blank" href="https://linkedin.com/in/adeniran-moses-73b04b29a"><img src="images/linkedin-svgrepo-com.png" alt="THE WEBSTR"></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="ham" id="ham">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+
+<div id="cur"></div>
+<div id="cur-r"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#" onclick="showPage('home');return false;">
+    <div class="nav-logo-mark">W</div>
+    <span class="nav-logo-name">The Webstr</span>
+  </a>
+  <ul class="nav-links">
+    <li><button onclick="showPage('home')" id="nav-home" class="active">Home</button></li>
+    <li><button onclick="showPage('work')" id="nav-work">Work</button></li>
+    <li><button onclick="showPage('services')" id="nav-services">Services</button></li>
+    <li><button onclick="showPage('about')" id="nav-about">About</button></li>
+    <li><button onclick="showPage('contact')" id="nav-contact">Contact</button></li>
+  </ul>
+  <button class="nav-hire" onclick="showPage('contact')">Hire Me</button>
+</nav>
+
+<!-- ══════════ HOME ══════════ -->
+<div id="page-home" class="page active">
+  <div class="home-glow"></div>
+  <div class="home-glow-2"></div>
+  <div class="home-grid-lines"></div>
+
+  <div class="home-content">
+    <div class="home-left">
+      <div class="home-eyebrow">
+        <div class="home-eyebrow-dot"></div>
+        <span>Available for work · Full-Stack Developer & Designer</span>
       </div>
-      <div class="close" id="close">
-        <div class="slant slant1"></div>
-        <div class="slant slant2"></div>
-      </div>
-    </header>
-    <div class="hero-grid">
-      <div class="profile">
-        <h2>ADENIRAN</h2>
-        <h1>MOSES</h1>
-        <h3>Web developer</h3>
-        <p>I help in enhancing business growth by developing clean and functional online environment that increases your customer-base.</p>
-        <div class="cta">
-          <a href="" class="cta-btn aura-one">View My Work</a>
-          <a href="" class="cta-btn2 aura-two">Let's build your website</a>
-        </div>
-      </div>
-      <div class="hero-text">
-        <h1>Building clean, creative and functional websites that increases your clientele.</h1>
-        <p>I create websites that not only look great but also serve a purpose. My goal is to deliver value through thoughtful design and effective problem-solving, and help you attract new customers and grow your revenue.</p>
-      </div>
-    </div>
-    <div class="c-ribbon">
-      <div class="pn">
-        <img src="images/call-chat-svgrepo-com.png" alt="THE WEBSTR">
-        <a href="tel:+2348087013942">+2348087013942</a>
-      </div>
-      <div class="socials">
-        <a target="_blank" href="https://www.facebook.com/profile.php?1d=61578874030223"><img src="images/facebook-svgrepo-com (1).png" alt="THE WEBSTR"></a>
-        <a target="_blank" href="https://www.instagram.com/_th_webstr?igsh=MWFjeXVzNDBka2diMw=="><img src="images/instagram-167-svgrepo-com.png" alt="THE WEBSTR"></a>
-        <a target="_blank" href="https://linkedin.com/in/adeniran-moses-73b04b29a"><img src="images/linkedin-svgrepo-com.png" alt="THE WEBSTR"></a>
+
+      <h1 class="home-headline">
+        <span class="tag">I build</span><br>
+        <em>beautiful</em><br>
+        web things.
+      </h1>
+
+      <p class="home-bio">
+        I'm <strong>Ay</strong> — a self-taught full-stack developer and web designer based in Lagos, Nigeria. I design and build fast, polished, and purposeful digital experiences for businesses, studios, and founders across the UK, US, and Europe.
+      </p>
+
+      <div class="home-ctas">
+        <button class="btn-solid" onclick="showPage('work')">See My Work</button>
+        <button class="btn-outline" onclick="showPage('about')">About Me</button>
       </div>
     </div>
-  </section>
-  <section class="about" id="about">
-    <div class="container">
-      <h4 class="heading aura">About Me</h4>
-      <p class="abt aura">I'm Adeniran Moses, a passionate growth-minded web developer on a mission to build clean, creative and functional websites that don't just look good but also deliver results.
-      I believe in the power of thoughtful design and effective problem-solving to create online experiences that truly resonate with users. My approach is centered around enhancing business growth and helping businesses no matter the size develop a vast customer base.</p>
-      <div class="separator aura">
-        <div class="w-thin-line"></div>
-        <a href="" id="abt-btn" class="cta-btn">Download CV</a>
+
+    <div class="home-portrait-wrap">
+      <div class="home-portrait-frame">
+        <img
+          src="images/portrait.webp"
+          class="home-portrait-img"
+          alt="Ay — The Webstr"
+          onerror="this.style.background='linear-gradient(145deg,#1a0d2e,#2d1060)';this.style.display='block'"
+        >
       </div>
-      <div class="abt-flex">
-        <div class="focus">
-          <h1 class="aura">Beyond the code, I focus on three main pillars:</h1>
-          <div class="focus-flex">
-            <div class="focus-item aura">
-              <img src="images/idea-and-creativity-symbol-of-a-lightbulb-svgrepo-com.png" alt="THE WEBSTR">
-              <h3>Creativity</h3>
-              <p>I believe that creativity is the heart of great web design. I strive to infuse every project with innovative ideas and unique perspectives that set your website apart from the competition.</p>
-            </div>
-            <div class="focus-item aura">
-              <img src="images/settings-svgrepo-com.png" alt="THE WEBSTR">
-              <h3>Functionality</h3>
-              <p>A beautiful website is only as good as its functionality. I prioritize user experience and ensure that every element of your site is designed to be intuitive, responsive, and easy to navigate, so your clients enjoy their experience in your site.</p>
-            </div>
-            <div class="focus-item aura">
-              <img src="images/briefcase-svgrepo-com.png" alt="THE WEBSTR">
-              <h3>Communication & Business Value</h3>
-              <p>Effective communication is key to understanding your vision and goals. I work closely with you throughout the development process to ensure that your website reflects your brand identity and meets your business objectives.</p>
-            </div>
-          </div>
-        </div>
-        <div class="webstr-profile">
-          <div class="webstr aura"><img src="images/webstr.png" alt="THE WEBSTR"></div>
-          <div class="webstr-text aura">
-            <h3>THE WEBSTR</h3>
-            <p>Your trusted partner in web development</p>
-          </div>
-          <div class="achievements aura">
-            <div class="achievement-item">
-              <h2>120+</h2>
-              <p>Projects Completed</p>
-            </div>
-            <div class="achievement-item">
-              <h2>54+</h2>
-              <p>Happy Clients</p>
-            </div>
-            <div class="achievement-item">
-              <h2>5+</h2>
-              <p>Years of Experience</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="home-portrait-tag">Lagos, Nigeria · Est. 2024</div>
     </div>
-  </section>
-  <section class="services" id="services">
-    <div class="container">
-      <h4 class="heading aura">Services</h4>
-      <p class="abt aura">I offer a range of web development services designed to help you establish a strong online presence and achieve your business goals. Whether you're looking to build a new website from scratch or enhance an existing one, I have the skills and expertise to deliver results.</p>
-      <div class="separator aura">
-        <div class="w-thin-line"></div>
-        <a href="" id="svc-btn" class="cta-btn">Get a Quote</a>
-      </div>
-      <div class="services-grid">
-        <div class="service-item aura">
-          <img src="images/web-dev.png" alt="THE WEBSTR">
-          <h3>Web Design & Development</h3>
-          <p>Get a professional website that impresses visitors and makes your business stand out, on desktop and mobile.</p>
-        </div>
-        <div class="service-item aura">
-          <img src="images/seo.png" alt="THE WEBSTR">
-          <h3>SEO Optimization</h3>
-          <p>Show up  when customers search for you on Google. I'll set up the basics so people can actually find your business online.</p>
-        </div>
-        <div class="service-item aura">
-          <img src="images/redesign.png" alt="THE WEBSTR">
-          <h3>Website Redesign</h3>
-          <p>Already have a website? I'll modernize it to load faster, look better and turn visitors into paying customers.</p>
-        </div>
-        <div class="service-item fourth aura">
-          <img src="images/landingpg.png" alt="THE WEBSTR">
-          <h3>Landing Page Creation</h3>
-          <p>Running a promotion or campaign? I'll build youa high converting landing page designed to  bring in leads and sales.</p>
-        </div>
-        <div class="service-item fifth aura">
-          <img src="images/maintenance.png" alt="THE WEBSTR">
-          <h3>Website Maintenance</h3>
-          <p>I keep your site updated, secure and running smoothly so you can focus on your business.</p>
-        </div>
-      </div>
-      <a href="" class="cta-btn s-btn aura">Reach Out</a>
+  </div>
+
+  <div class="home-stats">
+    <div class="home-stat">
+      <div class="home-stat-num">6+</div>
+      <div class="home-stat-label">Projects Shipped</div>
     </div>
-  </section>
-  <section class="projects" id="projects">
-    <div class="container">
-      <h4 class="heading aura">My Projects</h4>
-      <p class="aura">Take a look at some of my amazing works. Immerse youself in my world of creativity and functionality, all available in all different screen sizes ranging from 5k screens to 320px. Enjoy!</p>
-      <div class="separator aura">
-        <div class="w-thin-line"></div>
-        <a href="" id="prj-btn" class="cta-btn">View All Projects</a>
-      </div>
-      <div class="project-grid">
-        <div class="project-item aura">
-          <img src="images/car-detailing.jpeg" alt="THE WEBSTR">
-          <h3>Sparkle Car Detailing Services</h3>
-          <p>we offer a wide range of affordable car detailing services, dive into our catalog and give us a call.</p>
-          <a href="https://thewebstr25.github.io/sparkle-car-wash/" class="cta-btn" target="_blank">Visit <img src="images/globe-showing-europe-africa-svgrepo-com.png" alt="THE WEBSTR"></a>
-        </div>
-        <div class="project-item aura">
-          <img src="images/hairstylist-demo.jpeg" alt="THE WEBSTR">
-          <h3>BEE - Does Hair Beauty Salon</h3>
-          <p>BEE - Does hair is a beauty salon that offers a wide range of beauty services for women. Have a glimpse of their catalogue.</p>
-          <a href="https://thewebstr25.github.io/Hair-stylist-demo/" target="_blank" class="cta-btn">Visit <img src="images/globe-showing-europe-africa-svgrepo-com.png" alt="THE WEBSTR"></a>
-      </div>
-        <div class="project-item aura">
-          <img src="images/restuarant-demo.jpeg" alt="THE WEBSTR">
-          <h3>Allahabdi Catering Services</h3>
-          <p>Experience luxury in all your favourite dishes, for any of your events.</p>
-          <a href="" class="cta-btn">Visit <img src="images/globe-showing-europe-africa-svgrepo-com.png" alt="THE WEBSTR"></a>
-        </div>
+    <div class="home-stat-divider"></div>
+    <div class="home-stat">
+      <div class="home-stat-num">4</div>
+      <div class="home-stat-label">Countries Served</div>
     </div>
-  </section>
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <h4 class="heading aura">Succes Stories</h4>
-      <p class="aura">Don't just take my word for it, hear what my clients have to say about their experience working with me. Here are some testimonials from satisfied clients who have seen real results from my web development services.</p>
-      <div class="separator aura">
-        <div class="w-thin-line"></div>
-        <a href="" id="tst-btn" class="cta-btn">More Reviews</a>
-      </div>
-      <div class="testimony-flex">
-        <div class="testimony-card aura">
-          <img src="images/person1.png" alt="THE WEBSTR">
-          <div class="testimony-text">
-            <img src="images/five-star.png" alt="THE WEBSTR">
-            <p>"<em>Webstr</em> completely transformed our online presence. Before, we barely had inquiries from our old website, but after redsigning, our bookings tripled in just two months. Clients now tell us they found us onliine first. Best decision we made so far this year."</p>
-            <div class="w-thin-line"></div>
-            <p class="side-text">~ Isabella Rossi</p>
-          </div>
-        </div>
-        <div class="testimony-card aura">
-          <img src="images/person2.png" alt="THE WEBSTR">
-          <div class="testimony-text">
-            <img src="images/five-star.png" alt="THE WEBSTR">
-            <p>"I was hesitant at first, but working with <em>Webstr</em> turned out to be a game changer. he built us a fast, modern, and mobile friendly website, now we look professional and trustworthy and it shows our revenue went up by 40% since launch."</p>
-            <div class="w-thin-line"></div>
-            <p class="side-text">~ Carlos Moretti</p>
-          </div>
-        </div>
-        <div class="testimony-card aura">
-          <img src="images/person3.png" alt="THE WEBSTR">
-          <div class="testimony-text">
-            <img src="images/five-star.png" alt="THE WEBSTR">
-            <p>"The communication, attention to detail and creativity stood out. <em>Webstr</em> didn't just give me a website, he gave me a tool that actually brings in clients. My car detailing business finally looks as good online as it does in person"</p>
-            <div class="w-thin-line"></div>
-            <p class="side-text">~ Boyd Luther</p>
-          </div>
-        </div>
-        <div class="testimony-card aura">
-          <img src="images/person5.png" alt="THE WEBSTR">
-          <div class="testimony-text">
-            <img src="images/five-star.png" alt="THE WEBSTR">
-            <p>" We used to rely on word of mouth but after <em>Webstr</em> built our site, people started finding us through Google and contacting us directly. Our customer base has expanded beyond our local areas. The investment paid for itself fast."</p>
-            <div class="w-thin-line"></div>
-            <p class="side-text">~ Susan Martinez</p>
-          </div>
+    <div class="home-stat-divider"></div>
+    <div class="home-stat">
+      <div class="home-stat-num">2</div>
+      <div class="home-stat-label">Production Apps</div>
+    </div>
+    <div class="home-stat-divider"></div>
+    <div class="home-stat">
+      <div class="home-stat-num">100%</div>
+      <div class="home-stat-label">Self-Taught</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ WORK ══════════ -->
+<div id="page-work" class="page">
+  <div class="page-header">
+    <div>
+      <div class="page-title-eyebrow">Selected Work</div>
+      <h2 class="page-title">What I've <em>Built</em></h2>
+    </div>
+    <div class="page-title-right">06 Projects<br>2024 — 2025</div>
+  </div>
+
+  <div class="work-filters">
+    <button class="work-filter active" data-filter="all">All</button>
+    <button class="work-filter" data-filter="design">Web Design</button>
+    <button class="work-filter" data-filter="app">Applications</button>
+    <button class="work-filter" data-filter="concept">Concepts</button>
+  </div>
+
+  <div class="work-grid">
+    <!-- Capital Real Estate – Featured -->
+    <div class="work-card featured reveal" data-cat="app">
+      <div class="work-card-visual wv-capital"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-tag-top live">● Live · React + Vite</div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-content">
+        <div class="work-card-cat">Full-Stack Application · Flagship</div>
+        <div class="work-card-name">Capital Real Estate</div>
+        <div class="work-card-desc">Production-grade real estate platform built in React + Vite. Features AI assistant (Anthropic API), mortgage calculator, Chart.js market dashboard, Google Maps integration, property comparison, and dark mode. 11 features targeting a 99/100 quality score.</div>
+        <div class="work-card-tech">
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Vite</span>
+          <span class="tech-badge">Anthropic API</span>
+          <span class="tech-badge">Chart.js</span>
+          <span class="tech-badge">Google Maps</span>
         </div>
       </div>
     </div>
-  </section>
-  <section class="contact" id="contact">
-    <div class="contact-flex">
-      <div class="contact-text">
-        <div class="dk"></div>
-        <h4 class="heading aura">Get In Touch</h4>
-        <p class="aura">Whether you need a brand new website or you wan to improve your current one, I'd love to help.
-          Tell me about your business and I'll show you how we can make your website work harder for you.
-        </p>
+
+    <!-- Samstev Lensman -->
+    <div class="work-card reveal" data-cat="design">
+      <div class="work-card-visual wv-sam"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-tag-top live">● Delivered</div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-content">
+        <div class="work-card-cat">Web Design · Photography</div>
+        <div class="work-card-name">Samstev Lensman</div>
+        <div class="work-card-desc">Dark editorial portfolio for Lagos-based photographer. Navy/off-white palette, 10 JS interaction modules, delivered as separate HTML/CSS/JS files.</div>
+        <div class="work-card-tech">
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">JavaScript</span>
+        </div>
       </div>
+    </div>
+
+    <!-- LeadDork -->
+    <div class="work-card reveal rd1" data-cat="app">
+      <div class="work-card-visual wv-leaddork"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-tag-top">Architected</div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-content">
+        <div class="work-card-cat">SaaS Application · AI-Powered</div>
+        <div class="work-card-name">LeadDork</div>
+        <div class="work-card-desc">AI-powered LinkedIn lead generation tool. React + Vite frontend, Node.js + Express backend, PostgreSQL, Gemini API. Full README and deployment plan completed.</div>
+        <div class="work-card-tech">
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Node.js</span>
+          <span class="tech-badge">PostgreSQL</span>
+          <span class="tech-badge">Gemini API</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Peach Studio -->
+    <div class="work-card reveal" data-cat="concept">
+      <div class="work-card-visual wv-peach"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-tag-top">Concept Mock</div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-content">
+        <div class="work-card-cat">Web Design · Interior Design · UK</div>
+        <div class="work-card-name">Peach Studio</div>
+        <div class="work-card-desc">Unsolicited redesign concept for Kathy Bensusan's Essex-based interior design studio. Full-bleed editorial hero, luxury treatment, warm espresso palette.</div>
+        <div class="work-card-tech">
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FitTransform -->
+    <div class="work-card reveal rd2" data-cat="design">
+      <div class="work-card-visual wv-fit"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-tag-top live">● Live · Netlify</div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-content">
+        <div class="work-card-cat">Web Design · Fitness</div>
+        <div class="work-card-name">FitTransform</div>
+        <div class="work-card-desc">Landing page for a Netherlands-based fitness coaching brand. Mobile-first, Google Fonts (Poppins), deployed to Netlify.</div>
+        <div class="work-card-tech">
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">Netlify</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- T-YAP -->
+    <div class="work-card reveal rd3" data-cat="app">
+      <div class="work-card-visual wv-tyap"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-tag-top live">● Production Contribution</div>
+      <div class="work-card-arrow">↗</div>
+      <div class="work-card-content">
+        <div class="work-card-cat">Backend · Transport FinTech</div>
+        <div class="work-card-name">T-YAP</div>
+        <div class="work-card-desc">Contributed to a digital transport payment platform. API testing with Postman, backend notification systems (push, SMS, email APIs). Real production codebase.</div>
+        <div class="work-card-tech">
+          <span class="tech-badge">REST API</span>
+          <span class="tech-badge">Postman</span>
+          <span class="tech-badge">Node.js</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ SERVICES ══════════ -->
+<div id="page-services" class="page">
+  <div class="services-intro reveal">
+    <div>
+      <div class="page-title-eyebrow">What I Offer</div>
+      <h2 class="services-heading">Services &<br><em>Rates</em></h2>
+    </div>
+    <div class="services-intro-right">
+      <p class="services-intro-text">From concept to code. I design and build the kind of websites that make a strong first impression — for clients, employers, and anyone else who lands on your page.</p>
+      <div class="services-min-rate">
+        <span class="services-min-label">From</span>
+        <span class="services-min-num"><sup>$</sup>600</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-table">
+    <div class="service-row reveal">
+      <div class="service-row-num">01</div>
+      <div>
+        <div class="service-row-name">Website <em>Redesign</em><small>Full Transformation</small></div>
+      </div>
+      <div class="service-row-desc">Complete overhaul of an existing site — new layout, visual system, copy structure, and code. Built to perform with your ideal clients. Separate HTML, CSS, and JS files delivered.</div>
+      <div class="service-row-price">$600+<small>per project</small></div>
+    </div>
+    <div class="service-row reveal rd1">
+      <div class="service-row-num">02</div>
+      <div>
+        <div class="service-row-name">New <em>Website Build</em><small>From Scratch</small></div>
+      </div>
+      <div class="service-row-desc">Bespoke design, clean hand-coded output. No page builders, no theme bloat. Mobile-first, fast, and entirely yours to own and maintain.</div>
+      <div class="service-row-price">$800+<small>per project</small></div>
+    </div>
+    <div class="service-row reveal rd2">
+      <div class="service-row-num">03</div>
+      <div>
+        <div class="service-row-name">React <em>Applications</em><small>Full-Stack</small></div>
+      </div>
+      <div class="service-row-desc">Interactive web applications with React + Vite. API integrations, dashboards, SaaS tools, and data-driven UIs. Backend support with Node.js and PostgreSQL available.</div>
+      <div class="service-row-price">$1,200+<small>per project</small></div>
+    </div>
+    <div class="service-row reveal rd3">
+      <div class="service-row-num">04</div>
+      <div>
+        <div class="service-row-name">Landing <em>Pages</em><small>Conversion Focused</small></div>
+      </div>
+      <div class="service-row-desc">Single-purpose pages built to convert. Clear visual hierarchy, sharp copy structure, fast load times. Ideal for campaigns, offers, and lead capture.</div>
+      <div class="service-row-price">$400+<small>per page</small></div>
+    </div>
+    <div class="service-row reveal rd4">
+      <div class="service-row-num">05</div>
+      <div>
+        <div class="service-row-name">Site <em>Audit</em><small>Actionable Report</small></div>
+      </div>
+      <div class="service-row-desc">A detailed breakdown of what's hurting your site's performance, trust signals, and conversion rate — with a concrete action plan and priority fixes attached.</div>
+      <div class="service-row-price">$150<small>flat rate</small></div>
+    </div>
+  </div>
+
+  <div class="services-includes">
+    <div class="services-includes-title">Every project<br>includes:</div>
+    <div class="includes-grid">
+      <div class="include-card reveal">
+        <div class="include-card-icon">✦</div>
+        <div class="include-card-title">Mobile-First Design</div>
+        <div class="include-card-text">Every layout is designed for mobile first, then scaled up. Your site works on every device from day one.</div>
+      </div>
+      <div class="include-card reveal rd1">
+        <div class="include-card-icon">⚡</div>
+        <div class="include-card-title">Performance Optimised</div>
+        <div class="include-card-text">Clean, lightweight code. No unnecessary dependencies. Fast load times out of the box.</div>
+      </div>
+      <div class="include-card reveal rd2">
+        <div class="include-card-icon">🎨</div>
+        <div class="include-card-title">Custom Design System</div>
+        <div class="include-card-text">Typography, colour, spacing — all matched to your brand. Nothing generic, nothing borrowed.</div>
+      </div>
+      <div class="include-card reveal rd3">
+        <div class="include-card-icon">📁</div>
+        <div class="include-card-title">Clean File Handoff</div>
+        <div class="include-card-text">Separate HTML, CSS, and JS files. Well-commented, easy to maintain, fully yours.</div>
+      </div>
+      <div class="include-card reveal">
+        <div class="include-card-icon">🔁</div>
+        <div class="include-card-title">Revision Rounds</div>
+        <div class="include-card-text">Two rounds of revisions included on every project. We get it right together.</div>
+      </div>
+      <div class="include-card reveal rd1">
+        <div class="include-card-icon">🚀</div>
+        <div class="include-card-title">Deployment Support</div>
+        <div class="include-card-text">I'll help you get it live — Netlify, GitHub Pages, Vercel, or your own host.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ ABOUT ══════════ -->
+<div id="page-about" class="page">
+  <div class="about-hero">
+    <div class="about-portrait-wrap reveal">
+      <img
+        src="images/portrait.webp"
+        class="about-portrait"
+        alt="Ay — The Webstr"
+        onerror="this.style.background='linear-gradient(145deg,#1a0d2e,#0d0a1a)';this.style.height='400px';this.style.display='block'"
+      >
+      <div class="about-portrait-caption"></div>
+      <div class="about-portrait-name">Ay · Lagos, Nigeria</div>
+    </div>
+
+    <div class="about-intro reveal rd1">
+      <div class="about-intro-eyebrow">About Me</div>
+      <h2 class="about-intro-headline">Developer.<br>Designer.<br><em>Builder.</em></h2>
+      <p class="about-intro-body">I'm a <strong>self-taught full-stack developer and web designer</strong> based in Lagos, Nigeria, operating under the studio brand <strong>The Webstr</strong>. I build fast, polished, and purposeful digital experiences for independent businesses and startups across the globe.</p>
+      <p class="about-intro-body">My background is a mix of design instinct and engineering mindset — I care as much about how something looks as how it's built. I started with HTML and CSS, kept going, and haven't stopped building since.</p>
+      <p class="about-intro-body">I've contributed to production systems, shipped real client projects, and architected SaaS tools — all self-directed, all from scratch.</p>
+      <div class="about-links">
+        <a href="https://github.com/thWebstr" class="about-link" target="_blank" rel="noopener">↗ GitHub</a>
+        <a href="#" class="about-link" target="_blank" rel="noopener">↗ LinkedIn</a>
+        <a href="#" class="about-link" target="_blank" rel="noopener">↗ Resume (PDF)</a>
+        <a href="#" class="about-link" onclick="showPage('contact');return false;">→ Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-skills">
+    <div class="about-section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-label">Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Vite</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Animations</span>
+        </div>
+      </div>
+      <div class="skill-group reveal rd1">
+        <div class="skill-group-label">Backend & Data</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">Push/SMS/Email APIs</span>
+        </div>
+      </div>
+      <div class="skill-group reveal rd2">
+        <div class="skill-group-label">Tools & Workflow</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">Netlify</span>
+          <span class="skill-tag">Vercel</span>
+          <span class="skill-tag">Railway</span>
+          <span class="skill-tag">Anthropic API</span>
+          <span class="skill-tag">Gemini API</span>
+          <span class="skill-tag">Chart.js</span>
+          <span class="skill-tag">Google Maps API</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-experience">
+    <div class="about-section-title">Experience</div>
+    <div class="exp-items">
+      <div class="exp-item reveal">
+        <div class="exp-period">2024 — Present</div>
+        <div>
+          <div class="exp-role">Freelance Web Designer & Developer</div>
+          <div class="exp-company">The Webstr</div>
+          <div class="exp-desc">Independent studio building bespoke websites and web applications for international clients across the UK, US, Canada, and Europe. Minimum engagement: $600. Projects span redesigns, new builds, SaaS tools, and editorial concepts.</div>
+        </div>
+        <div class="exp-type">Freelance</div>
+      </div>
+      <div class="exp-item reveal rd1">
+        <div class="exp-period">2024</div>
+        <div>
+          <div class="exp-role">Frontend & API Contributor</div>
+          <div class="exp-company">T-YAP · Transport Payment Platform</div>
+          <div class="exp-desc">Contributed to a live digital transport payment system. Led API testing with Postman, identified endpoint and OTP delivery bugs in the deployed environment, and contributed to backend notification system work including push, SMS, and email integrations.</div>
+        </div>
+        <div class="exp-type">Contract</div>
+      </div>
+      <div class="exp-item reveal rd2">
+        <div class="exp-period">2024</div>
+        <div>
+          <div class="exp-role">Backend Notification Engineer</div>
+          <div class="exp-company">TIAP · Equity-Based Startup</div>
+          <div class="exp-desc">Equity-based contribution to an early-stage startup. Built out the notification infrastructure — push notifications, SMS delivery, and email API integration. Operated as a founding technical contributor.</div>
+        </div>
+        <div class="exp-type">Equity</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ CONTACT ══════════ -->
+<div id="page-contact" class="page">
+  <div class="contact-wrap">
+    <div class="contact-left reveal">
+      <div class="contact-eyebrow">Get In Touch</div>
+      <h2 class="contact-heading">Let's build<br>something<br><em>together.</em></h2>
+      <p class="contact-subtext">Whether you have a project in mind, a role to fill, or just want to see if we'd be a good fit — my inbox is open. I respond within 24 hours.</p>
+
+      <div class="contact-channels">
+        <a href="mailto:hello@thewebstr.com" class="contact-channel">
+          <div class="contact-channel-left">
+            <div class="contact-channel-label">Email</div>
+            <div class="contact-channel-value">hello@thewebstr.com</div>
+          </div>
+          <div class="contact-channel-arrow">↗</div>
+        </a>
+        <a href="https://github.com/thWebstr" class="contact-channel" target="_blank" rel="noopener">
+          <div class="contact-channel-left">
+            <div class="contact-channel-label">GitHub</div>
+            <div class="contact-channel-value">github.com/thWebstr</div>
+          </div>
+          <div class="contact-channel-arrow">↗</div>
+        </a>
+        <a href="#" class="contact-channel">
+          <div class="contact-channel-left">
+            <div class="contact-channel-label">LinkedIn</div>
+            <div class="contact-channel-value">linkedin.com/in/thewebstr</div>
+          </div>
+          <div class="contact-channel-arrow">↗</div>
+        </a>
+        <a href="#" class="contact-channel">
+          <div class="contact-channel-left">
+            <div class="contact-channel-label">Instagram</div>
+            <div class="contact-channel-value">@thewebstr</div>
+          </div>
+          <div class="contact-channel-arrow">↗</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-right reveal rd2">
+      <div class="form-cta-text">Or send a direct message →</div>
       <div class="contact-form">
-        <form action="">
-          <input class="aura" type="text" name="name" placeholder="Your Name" required>
-          <input class="aura" type="email" name="email" placeholder="Your Email" required>
-          <textarea class="aura" name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" class="cta-btn aura">Send Message</button>
-        </form>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input class="form-input" type="text" placeholder="Jane Smith">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input class="form-input" type="email" placeholder="jane@studio.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">What's this about?</label>
+          <select class="form-select" aria-label="What is this message about?">
+            <option>Freelance Project</option>
+            <option>Full-Time Role</option>
+            <option>Contract Work</option>
+            <option>Collaboration</option>
+            <option>Something Else</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Project / Role Details</label>
+          <textarea class="form-textarea" placeholder="Tell me what you're building, what you need, and any relevant details..."></textarea>
+        </div>
+        <button class="form-submit">Send Message →</button>
       </div>
     </div>
-  </section>
-  <footer>
-    <div class="footer-flex">
-      <div class="closing-remark">
-        <div class="first-child aura">
-          <img src="images/favicon.png" alt="THE WEBSTR">
-          <h4>Adeniran Moses  - <span>THE WEBSTR</span></h4>
-        </div>
-        <p class="aura">I bring creativity, skill, and professionalism together to deliver websites that are functional, reliable and built with your business' growth in mind.</p>
-        <div class="social-flex">
-          <div class="aura">
-            <img src="images/call-chat-svgrepo-com.png" alt="THE WEBSTR">
-            <a href="tel:+2348087013942">+234 808 701 3942</a>
-          </div>
-          <div class="aura">
-            <img src="images/instagram-167-svgrepo-com.png" alt="THE WEBSTR">
-            <a href="https://www.instagram.com/_th_webstr?igsh=MWFjeXVzNDBka2diMw==">@_th_webstr</a>
-          </div>
-          <div class="aura">
-            <img src="images/facebook-svgrepo-com (1).png" alt="THE WEBSTR">
-            <a href="https://www.facebook.com/profile.php?1d=61578874030223">Adeniran Moses</a>
-          </div>
-          <div class="aura">
-            <img src="images/linkedin-svgrepo-com.png" alt="THE WEBSTR">
-            <a href="https://linkedin.com/in/adeniran-moses-73b04b29a">Adeniran Moses</a>
-          </div>
-          <div class="aura">
-            <img src="images/email.png" alt="THE WEBSTR">
-            <a href="mailto:mosesthwebstr@gmail.com">mosesthwebstr@gmail.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="navigate">
-        <h2 class="heading aura">Navigation</h2>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Me</a></li>
-          <li><a href=""></a>My Services</li>
-          <li><a href="">My Projects</a></li>
-          <li><a href="">Testimonials</a></li>
-      </div>
-      <div class="ttools">
-        <h2 class="heading aura">Tools</h2>
-        <div class="tools">
-        <img src="images/html-5.png" alt="THE WEBSTR">
-        <img src="images/css-3.png" alt="THE WEBSTR">
-        <img src="images/javascript.png" alt="THE WEBSTR">
-        <img src="images/node-js.png" alt="THE WEBSTR">
-        <img src="images/tailwind.png" alt="THE WEBSTR">
-        <img src="images/git.png" alt="THE WEBSTR">
-        <img src="images/github.png" alt="THE WEBSTR">
-        <img src="images/vscode.png" alt="THE WEBSTR">
-        <img src="images/vue.png" alt="THE WEBSTR">
-        <img src="images/postman.png" alt="THE WEBSTR">
-        <img src="images/angular.png" alt="THE WEBSTR">
-        <img src="images/netlify.png" alt="THE WEBSTR">
-        <img src="images/laravel.png" alt="THE WEBSTR">
-        </div>
-      </div>
-    </div>
-    <p class="footer-strip">&copy; 2025 _ <em>The Webstr</em>. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">© 2025 The Webstr · Ay · Lagos, Nigeria</div>
+  <div class="footer-right">Built by hand — no templates.</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
