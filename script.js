@@ -30,18 +30,51 @@ function setupCursorHovers() {
 }
 
 // PAGE ROUTING
-function showPage(name) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('active'));
-  
+function showPage(name, pushState = true) {
   const targetPage = document.getElementById('page-'+name);
+  if (!targetPage) return;
+
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links button').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-current', 'false');
+  });
+  
   const targetNav = document.getElementById('nav-'+name);
   
-  if (targetPage) targetPage.classList.add('active');
-  if (targetNav) targetNav.classList.add('active');
+  targetPage.classList.add('active');
+  if (targetNav) {
+    targetNav.classList.add('active');
+    targetNav.setAttribute('aria-current', 'page');
+  }
+  
+  // A11y: Update status and manage focus
+  const statusEl = document.getElementById('page-status');
+  if (statusEl) statusEl.textContent = `Moved to ${name} page`;
   
   window.scrollTo({top:0,behavior:'smooth'});
+  
+  if (pushState) {
+    history.pushState({page: name}, "", name === 'home' ? "/" : `#${name}`);
+  }
+  
   triggerReveals();
+}
+
+// Handle Browser Back/Forward
+window.addEventListener('popstate', (e) => {
+  const page = e.state ? e.state.page : 'home';
+  showPage(page, false);
+});
+
+// Handle Initial Hash
+function handleInitialPage() {
+  const hash = window.location.hash.substring(1);
+  if (hash) {
+    showPage(hash, false);
+  } else {
+    showPage('home', false);
+  }
 }
 
 // SCROLL REVEAL
@@ -74,7 +107,6 @@ function setupWorkFilters() {
       document.querySelectorAll('.work-card').forEach(card => {
         const match = f==='all' || card.dataset.cat===f;
         card.style.display = match ? 'block' : 'none';
-        // featured card takes full width only when visible
         if(card.classList.contains('featured')) {
           card.style.gridColumn = (match && f!=='design') ? 'span 2' : 'span 1';
         }
@@ -83,9 +115,37 @@ function setupWorkFilters() {
   });
 }
 
+// CONTACT FORM
+function setupContactForm() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+
+  const submitBtn = form.querySelector('.form-submit');
+  
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+    
+    // Simulate API call
+    setTimeout(() => {
+      submitBtn.textContent = 'Message Sent! →';
+      submitBtn.style.background = '#00C853';
+      form.reset();
+      
+      setTimeout(() => {
+        submitBtn.textContent = 'Send Message →';
+        submitBtn.style.background = 'var(--violet)';
+        submitBtn.disabled = false;
+      }, 3000);
+    }, 1500);
+  });
+}
+
 // INITIALIZATION
 document.addEventListener('DOMContentLoaded', () => {
+  handleInitialPage();
   setupCursorHovers();
   setupWorkFilters();
-  triggerReveals();
+  setupContactForm();
 });
