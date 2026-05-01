@@ -48,6 +48,29 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.addEventListener('DOMContentLoaded', () => {
   const reveals = document.querySelectorAll('.reveal');
   reveals.forEach(el => observer.observe(el));
+
+  // ── MOBILE DRAWER ──
+  const hamburger = document.getElementById('nav-hamburger');
+  const drawer = document.getElementById('mobile-drawer');
+  const overlay = document.getElementById('drawer-overlay');
+  const closeBtn = document.getElementById('drawer-close');
+  const drawerLinks = document.querySelectorAll('.drawer-link');
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  if (hamburger) hamburger.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+  if (overlay) overlay.addEventListener('click', closeDrawer);
+  drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
 });
 
 // ── FORM MAILTO HANDLER ──
