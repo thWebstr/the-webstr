@@ -571,6 +571,8 @@ nav::after {
   background: var(--bg2);
   aspect-ratio: 16/11;
   cursor: none;
+  display: block;
+  text-decoration: none;
 }
 .work-card.featured {
   grid-column: span 2;
