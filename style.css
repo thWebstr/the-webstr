@@ -385,9 +385,10 @@ nav::after {
   position: relative;
 }
 .home-portrait-frame {
-  width: 320px;
-  height: 400px;
+  width: 380px;
+  height: 480px;
   position: relative;
+  transform: translateX(-4vw);
 }
 .home-portrait-frame::before {
   content: "";
@@ -1514,13 +1515,20 @@ footer {
     padding-top: 120px;
     gap: 40px;
   }
+  .home-headline {
+    font-size: clamp(48px, 14vw, 76px);
+    margin-bottom: 24px;
+  }
   .home-portrait-frame {
     width: 100%;
-    height: 280px;
+    height: 440px;
+    transform: none;
   }
   .home-stats {
-    flex-wrap: wrap;
-    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px;
+    gap: 32px;
   }
   .home-stat-divider {
     display: none;
@@ -1581,11 +1589,16 @@ footer {
   }
   .exp-item {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 16px;
   }
   .contact-wrap {
     grid-template-columns: 1fr;
     gap: 48px;
+  }
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   footer {
     flex-direction: column;

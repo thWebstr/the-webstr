@@ -29,14 +29,45 @@ function setupCursorHovers() {
   });
 }
 
-// SCROLL REVEAL
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); } });
-}, {threshold:0.08, rootMargin:'0px 0px -40px 0px'});
+// ── REVEAL ON SCROLL ──
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
 
-function initReveals() {
-  document.querySelectorAll('.reveal').forEach(el => {
-    revealObserver.observe(el);
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const reveals = document.querySelectorAll('.reveal');
+  reveals.forEach(el => observer.observe(el));
+});
+
+// ── FORM MAILTO HANDLER ──
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Grab field data
+    const name = document.getElementById('contact-name').value || 'Visitor';
+    const email = document.getElementById('contact-email').value;
+    const subjectRaw = document.getElementById('contact-subject');
+    const subject = subjectRaw ? subjectRaw.value : 'Portfolio Inquiry';
+    const message = document.getElementById('contact-message').value;
+    
+    // Format email body
+    const formattedBody = `Hello The Webstr,%0D%0A%0D%0AHere are the details of my request:%0D%0A%0D%0AName: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AProject Details:%0D%0A${encodeURIComponent(message)}%0D%0A%0D%0ABest regards,%0D%0A${name}`;
+    
+    // Open native mail app correctly populated
+    window.location.href = `mailto:thewebstr25@gmail.com?subject=New ${encodeURIComponent(subject)} Request from ${encodeURIComponent(name)}&body=${formattedBody}`;
   });
 }
 

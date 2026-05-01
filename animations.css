@@ -126,3 +126,126 @@ button:active {
 .rd4 {
   transition-delay: 0.4s;
 }
+
+/* ETHEREAL ORBS */
+.orbs-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.65;
+}
+.orb-1 {
+  width: 45vh;
+  height: 45vh;
+  background: rgba(102, 0, 255, 0.4);
+  top: -5%;
+  left: -5%;
+  animation: floatOrb1 16s ease-in-out infinite alternate;
+}
+.orb-2 {
+  width: 60vh;
+  height: 60vh;
+  background: rgba(153, 51, 255, 0.35);
+  bottom: -10%;
+  right: -5%;
+  animation: floatOrb2 22s ease-in-out infinite alternate -4s;
+}
+.orb-3 {
+  width: 35vh;
+  height: 35vh;
+  background: rgba(220, 100, 255, 0.3);
+  top: 30%;
+  left: 30%;
+  animation: floatOrb3 14s ease-in-out infinite alternate -8s;
+}
+.orb-4 {
+  width: 40vh;
+  height: 40vh;
+  background: rgba(80, 0, 200, 0.4);
+  top: 60%;
+  left: -10%;
+  animation: floatOrb4 18s ease-in-out infinite alternate -2s;
+}
+.orb-5 {
+  width: 50vh;
+  height: 50vh;
+  background: rgba(130, 0, 255, 0.25);
+  top: -20%;
+  right: 20%;
+  animation: floatOrb1 20s ease-in-out infinite alternate-reverse -7s;
+}
+.orb-6 {
+  width: 30vh;
+  height: 30vh;
+  background: rgba(60, 10, 180, 0.35);
+  bottom: 10%;
+  left: 50%;
+  animation: floatOrb2 15s ease-in-out infinite alternate-reverse -1s;
+}
+
+@keyframes floatOrb1 {
+  0% {
+    transform: translate(0, 0) scale(0.9);
+  }
+  33% {
+    transform: translate(35vw, 15vh) scale(1.3);
+  }
+  66% {
+    transform: translate(10vw, 45vh) scale(0.8);
+  }
+  100% {
+    transform: translate(50vw, -10vh) scale(1.1);
+  }
+}
+
+@keyframes floatOrb2 {
+  0% {
+    transform: translate(0, 0) scale(1.1);
+  }
+  33% {
+    transform: translate(-30vw, -30vh) scale(0.8);
+  }
+  66% {
+    transform: translate(15vw, -45vh) scale(1.3);
+  }
+  100% {
+    transform: translate(-45vw, 10vh) scale(0.9);
+  }
+}
+
+@keyframes floatOrb3 {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+  }
+  33% {
+    transform: translate(15vw, -40vh) scale(1.4);
+  }
+  66% {
+    transform: translate(-25vw, -20vh) scale(0.9);
+  }
+  100% {
+    transform: translate(35vw, 25vh) scale(1.2);
+  }
+}
+
+@keyframes floatOrb4 {
+  0% {
+    transform: translate(0, 0) scale(1.2);
+  }
+  33% {
+    transform: translate(35vw, 20vh) scale(0.9);
+  }
+  66% {
+    transform: translate(10vw, -40vh) scale(1.3);
+  }
+  100% {
+    transform: translate(-15vw, -15vh) scale(0.8);
+  }
+}
