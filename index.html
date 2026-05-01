@@ -21,6 +21,7 @@
   <meta property="twitter:description" content="Premium digital experiences built with purpose. Explore the selected work of Moses, a self-taught full-stack developer.">
   <meta property="twitter:image" content="images/og-image.jpg">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animations.css">
   <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/195074862?v=4" type="image/x-icon">
@@ -44,7 +45,9 @@
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#work">Portfolio</a></li>
+    <li><a href="#process">Process</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#testimonials">Clients</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -61,17 +64,17 @@
     <div class="home-left">
       <div class="home-eyebrow">
         <div class="home-eyebrow-dot"></div>
-        <span>Available for work · Full-Stack Developer & Designer</span>
+        <span>Available for partnership · Engineering & Design</span>
       </div>
 
       <h1 class="home-headline">
-        <span class="tag">I build</span><br>
-        <em>beautiful</em><br>
-        web things.
+        <span class="tag">Crafting</span><br>
+        <em>premium</em><br>
+        digital spaces.
       </h1>
 
       <p class="home-bio">
-        I'm <strong>Adeniran Moses</strong> — a self-taught full-stack developer and web designer based in Lagos, Nigeria. I design and build fast, polished, and purposeful digital experiences for businesses, studios, and founders across the UK, US, and Europe.
+        I'm <strong>Adeniran Moses</strong> — a full-stack engineer and digital designer based in Lagos, Nigeria. Operating with a studio mindset, I architect and refine high-performance web applications and digital experiences for forward-thinking brands across the UK, US, and Europe.
       </p>
 
       <div class="home-ctas">
@@ -81,7 +84,7 @@
     </div>
 
     <div class="home-portrait-wrap">
-      <div class="home-portrait-frame">
+      <div class="home-portrait-frame skeleton">
         <img
           src="images/portrait.webp"
           class="home-portrait-img"
@@ -175,77 +178,108 @@
 
     <!-- LeadDork -->
     <div class="work-card reveal rd1" data-cat="app">
-      <div class="work-card-visual wv-leaddork"></section>
-      <div class="work-card-overlay"></section>
-      <div class="work-card-tag-top">Architected</section>
-      <div class="work-card-arrow">↗</section>
+      <div class="work-card-visual wv-leaddork"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-arrow">↗</div>
       <div class="work-card-content">
-        <div class="work-card-cat">SaaS Application · AI-Powered</section>
-        <div class="work-card-name">LeadDork</section>
-        <div class="work-card-desc">AI-powered LinkedIn lead generation tool. React + Vite frontend, Node.js + Express backend, PostgreSQL, Gemini API. Full README and deployment plan completed.</section>
+        <div class="work-card-cat">SaaS Application · AI-Powered</div>
+        <div class="work-card-name">LeadDork</div>
+        <div class="work-card-desc">AI-powered LinkedIn lead generation tool. React + Vite frontend, Node.js + Express backend, PostgreSQL, Gemini API. Full README and deployment plan completed.</div>
         <div class="work-card-tech">
           <span class="tech-badge">React</span>
           <span class="tech-badge">Node.js</span>
           <span class="tech-badge">PostgreSQL</span>
           <span class="tech-badge">Gemini API</span>
-        </section>
-      </section>
-    </section>
+        </div>
+      </div>
+    </div>
 
     <!-- Peach Studio -->
     <div class="work-card reveal" data-cat="concept">
-      <div class="work-card-visual wv-peach"></section>
-      <div class="work-card-overlay"></section>
-      <div class="work-card-tag-top">Concept Mock</section>
-      <div class="work-card-arrow">↗</section>
+      <div class="work-card-visual wv-peach"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-tag-top">Concept Mock</div>
+      <div class="work-card-arrow">↗</div>
       <div class="work-card-content">
-        <div class="work-card-cat">Web Design · Interior Design · UK</section>
-        <div class="work-card-name">Peach Studio</section>
-        <div class="work-card-desc">Unsolicited redesign concept for Kathy Bensusan's Essex-based interior design studio. Full-bleed editorial hero, luxury treatment, warm espresso palette.</section>
+        <div class="work-card-cat">Web Design · Interior Design · UK</div>
+        <div class="work-card-name">Peach Studio</div>
+        <div class="work-card-desc">Unsolicited redesign concept for Kathy Bensusan's Essex-based interior design studio. Full-bleed editorial hero, luxury treatment, warm espresso palette.</div>
         <div class="work-card-tech">
           <span class="tech-badge">HTML</span>
           <span class="tech-badge">CSS</span>
           <span class="tech-badge">JavaScript</span>
-        </section>
-      </section>
-    </section>
+        </div>
+      </div>
+    </div>
 
     <!-- FitTransform -->
     <div class="work-card reveal rd2" data-cat="design">
-      <div class="work-card-visual wv-fit"></section>
-      <div class="work-card-overlay"></section>
-      <div class="work-card-tag-top live">● Live · Netlify</section>
-      <div class="work-card-arrow">↗</section>
+      <div class="work-card-visual wv-fit"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-tag-top live">● Live · Netlify</div>
+      <div class="work-card-arrow">↗</div>
       <div class="work-card-content">
-        <div class="work-card-cat">Web Design · Fitness</section>
-        <div class="work-card-name">FitTransform</section>
-        <div class="work-card-desc">Landing page for a Netherlands-based fitness coaching brand. Mobile-first, Google Fonts (Poppins), deployed to Netlify.</section>
+        <div class="work-card-cat">Web Design · Fitness</div>
+        <div class="work-card-name">FitTransform</div>
+        <div class="work-card-desc">Landing page for a Netherlands-based fitness coaching brand. Mobile-first, Google Fonts (Poppins), deployed to Netlify.</div>
         <div class="work-card-tech">
           <span class="tech-badge">HTML</span>
           <span class="tech-badge">CSS</span>
           <span class="tech-badge">Netlify</span>
-        </section>
-      </section>
-    </section>
+        </div>
+      </div>
+    </div>
 
     <!-- T-YAP -->
     <div class="work-card reveal rd3" data-cat="app">
-      <div class="work-card-visual wv-tyap"></section>
-      <div class="work-card-overlay"></section>
-      <div class="work-card-tag-top live">● Production Contribution</section>
-      <div class="work-card-arrow">↗</section>
+      <div class="work-card-visual wv-tyap"></div>
+      <div class="work-card-overlay"></div>
+      <div class="work-card-tag-top live">● Production Contribution</div>
+      <div class="work-card-arrow">↗</div>
       <div class="work-card-content">
-        <div class="work-card-cat">Backend · Transport FinTech</section>
-        <div class="work-card-name">T-YAP</section>
-        <div class="work-card-desc">Contributed to a digital transport payment platform. API testing with Postman, backend notification systems (push, SMS, email APIs). Real production codebase.</section>
+        <div class="work-card-cat">Backend · Transport FinTech</div>
+        <div class="work-card-name">T-YAP</div>
+        <div class="work-card-desc">Contributed to a digital transport payment platform. API testing with Postman, backend notification systems (push, SMS, email APIs). Real production codebase.</div>
         <div class="work-card-tech">
           <span class="tech-badge">REST API</span>
           <span class="tech-badge">Postman</span>
           <span class="tech-badge">Node.js</span>
-        </section>
-      </section>
-    </section>
+        </div>
+      </div>
+    </div>
   </section>
+</section>
+
+<!-- ══════════ PROCESS ══════════ -->
+<section id="process" class="page">
+  <div class="page-header">
+    <div>
+      <div class="page-title-eyebrow">Workflow</div>
+      <h2 class="page-title">How I <em>Work</em></h2>
+    </div>
+  </div>
+  <div class="process-grid">
+    <div class="process-card reveal">
+      <div class="process-icon">01</div>
+      <h3 class="process-title">Discovery & Strategy</h3>
+      <p class="process-desc">We start by understanding your goals, audience, and the problem we're solving. No assumptions, just aligned objectives.</p>
+    </div>
+    <div class="process-card reveal rd1">
+      <div class="process-icon">02</div>
+      <h3 class="process-title">Design & Prototyping</h3>
+      <p class="process-desc">I craft a bespoke visual direction and high-fidelity prototypes, iterating until the aesthetic perfectly matches your brand.</p>
+    </div>
+    <div class="process-card reveal rd2">
+      <div class="process-icon">03</div>
+      <h3 class="process-title">Development</h3>
+      <p class="process-desc">Translating design into clean, performant code. Everything is built mobile-first with precise attention to detail and load speeds.</p>
+    </div>
+    <div class="process-card reveal rd3">
+      <div class="process-icon">04</div>
+      <h3 class="process-title">Launch & Handoff</h3>
+      <p class="process-desc">Rigorous testing across devices before going live. I provide full source code handoff and deployment support.</p>
+    </div>
+  </div>
 </section>
 
 <!-- ══════════ SERVICES ══════════ -->
@@ -274,29 +308,29 @@
       <div class="service-row-price">$600+<small>per project</small></div>
     </div>
     <div class="service-row reveal rd1">
-      <div class="service-row-num">02</section>
+      <div class="service-row-num">02</div>
       <div>
-        <div class="service-row-name">New <em>Website Build</em><small>From Scratch</small></section>
-      </section>
-      <div class="service-row-desc">Bespoke design, clean hand-coded output. No page builders, no theme bloat. Mobile-first, fast, and entirely yours to own and maintain.</section>
-      <div class="service-row-price">$800+<small>per project</small></section>
-    </section>
+        <div class="service-row-name">New <em>Website Build</em><small>From Scratch</small></div>
+      </div>
+      <div class="service-row-desc">Bespoke design, clean hand-coded output. No page builders, no theme bloat. Mobile-first, fast, and entirely yours to own and maintain.</div>
+      <div class="service-row-price">$800+<small>per project</small></div>
+    </div>
     <div class="service-row reveal rd2">
-      <div class="service-row-num">03</section>
+      <div class="service-row-num">03</div>
       <div>
-        <div class="service-row-name">React <em>Applications</em><small>Full-Stack</small></section>
-      </section>
-      <div class="service-row-desc">Interactive web applications with React + Vite. API integrations, dashboards, SaaS tools, and data-driven UIs. Backend support with Node.js and PostgreSQL available.</section>
-      <div class="service-row-price">$1,200+<small>per project</small></section>
-    </section>
+        <div class="service-row-name">React <em>Applications</em><small>Full-Stack</small></div>
+      </div>
+      <div class="service-row-desc">Interactive web applications with React + Vite. API integrations, dashboards, SaaS tools, and data-driven UIs. Backend support with Node.js and PostgreSQL available.</div>
+      <div class="service-row-price">$1,200+<small>per project</small></div>
+    </div>
     <div class="service-row reveal rd3">
-      <div class="service-row-num">04</section>
+      <div class="service-row-num">04</div>
       <div>
-        <div class="service-row-name">Landing <em>Pages</em><small>Conversion Focused</small></section>
-      </section>
-      <div class="service-row-desc">Single-purpose pages built to convert. Clear visual hierarchy, sharp copy structure, fast load times. Ideal for campaigns, offers, and lead capture.</section>
-      <div class="service-row-price">$400+<small>per page</small></section>
-    </section>
+        <div class="service-row-name">Landing <em>Pages</em><small>Conversion Focused</small></div>
+      </div>
+      <div class="service-row-desc">Single-purpose pages built to convert. Clear visual hierarchy, sharp copy structure, fast load times. Ideal for campaigns, offers, and lead capture.</div>
+      <div class="service-row-price">$400+<small>per page</small></div>
+    </div>
     <div class="service-row reveal rd4">
       <div class="service-row-num">05</div>
       <div>
@@ -308,40 +342,72 @@
   </div>
 
   <div class="services-includes">
-    <div class="services-includes-title">Every project<br>includes:</section>
+    <div class="services-includes-title">Every project<br>includes:</div>
     <div class="includes-grid">
       <div class="include-card reveal">
-        <div class="include-card-icon">✦</section>
-        <div class="include-card-title">Mobile-First Design</section>
-        <div class="include-card-text">Every layout is designed for mobile first, then scaled up. Your site works on every device from day one.</section>
-      </section>
+        <div class="include-card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <div class="include-card-title">Mobile-First Design</div>
+        <div class="include-card-text">Every layout is designed for mobile first, then scaled up. Your site works on every device from day one.</div>
+      </div>
       <div class="include-card reveal rd1">
-        <div class="include-card-icon">⚡</section>
-        <div class="include-card-title">Performance Optimised</section>
-        <div class="include-card-text">Clean, lightweight code. No unnecessary dependencies. Fast load times out of the box.</section>
-      </section>
+        <div class="include-card-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="include-card-title">Performance Optimised</div>
+        <div class="include-card-text">Clean, lightweight code. No unnecessary dependencies. Fast load times out of the box.</div>
+      </div>
       <div class="include-card reveal rd2">
-        <div class="include-card-icon">🎨</section>
-        <div class="include-card-title">Custom Design System</section>
-        <div class="include-card-text">Typography, colour, spacing — all matched to your brand. Nothing generic, nothing borrowed.</section>
-      </section>
+        <div class="include-card-icon"><i class="fa-solid fa-palette"></i></div>
+        <div class="include-card-title">Custom Design System</div>
+        <div class="include-card-text">Typography, colour, spacing — all matched to your brand. Nothing generic, nothing borrowed.</div>
+      </div>
       <div class="include-card reveal rd3">
-        <div class="include-card-icon">📁</section>
-        <div class="include-card-title">Clean File Handoff</section>
-        <div class="include-card-text">Separate HTML, CSS, and JS files. Well-commented, easy to maintain, fully yours.</section>
-      </section>
+        <div class="include-card-icon"><i class="fa-regular fa-folder-open"></i></div>
+        <div class="include-card-title">Clean File Handoff</div>
+        <div class="include-card-text">Separate HTML, CSS, and JS files. Well-commented, easy to maintain, fully yours.</div>
+      </div>
       <div class="include-card reveal">
-        <div class="include-card-icon">🔁</section>
-        <div class="include-card-title">Revision Rounds</section>
-        <div class="include-card-text">Two rounds of revisions included on every project. We get it right together.</section>
-      </section>
+        <div class="include-card-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+        <div class="include-card-title">Revision Rounds</div>
+        <div class="include-card-text">Two rounds of revisions included on every project. We get it right together.</div>
+      </div>
       <div class="include-card reveal rd1">
-        <div class="include-card-icon">🚀</section>
-        <div class="include-card-title">Deployment Support</section>
-        <div class="include-card-text">I'll help you get it live — Netlify, GitHub Pages, Vercel, or your own host.</section>
-      </section>
-    </section>
-  </section>
+        <div class="include-card-icon"><i class="fa-solid fa-rocket"></i></div>
+        <div class="include-card-title">Deployment Support</div>
+        <div class="include-card-text">I'll help you get it live — Netlify, GitHub Pages, Vercel, or your own host.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section id="testimonials" class="page">
+  <div class="page-header">
+    <div>
+      <div class="page-title-eyebrow">Client Feedback</div>
+      <h2 class="page-title">Words of <em>Trust</em></h2>
+    </div>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="testimonial-quote">"Ay transformed our entire digital presence. The attention to detail and performance of the final app was exactly what we needed to scale."</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar"></div>
+        <div>
+          <div class="author-name">Sarah Jenkins</div>
+          <div class="author-role">Founder, TechStart</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal rd1">
+      <div class="testimonial-quote">"A rare mix of design eye and engineering rigor. Our new platform feels incredibly premium and works flawlessly."</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar"></div>
+        <div>
+          <div class="author-name">David Chen</div>
+          <div class="author-role">Director, Studio Nova</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ══════════ ABOUT ══════════ -->
@@ -362,9 +428,10 @@
     <div class="about-intro reveal rd1">
       <div class="about-intro-eyebrow">About Me</div>
       <h2 class="about-intro-headline">Developer.<br>Designer.<br><em>Builder.</em></h2>
-      <p class="about-intro-body">I'm a <strong>self-taught full-stack developer and web designer</strong> based in Lagos, Nigeria, operating under the studio brand <strong>The Webstr</strong>. I build fast, polished, and purposeful digital experiences for independent businesses and startups across the globe.</p>
-      <p class="about-intro-body">My background is a mix of design instinct and engineering mindset — I care as much about how something looks as how it's built. I started with HTML and CSS, kept going, and haven't stopped building since.</p>
-      <p class="about-intro-body">I've contributed to production systems, shipped real client projects, and architected SaaS tools — all self-directed, all from scratch.</p>
+      <p class="about-intro-body">Specializing in top-tier digital experiences, I blend deep engineering expertise with refined design sensibilities. My studio approach ensures that every pixel is purposeful and every line of code is thoroughly optimized.</p>
+      <p class="about-intro-body">From architecting data-heavy SaaS platforms to crafting breathtaking marketing sites, my mission is to elevate your brand above the noise. Having partnered with ambitious founders internationally, I bring a global perspective to high-performance development.</p>
+      <p class="about-intro-body">When you work with me, you're getting a dedicated technical partner—committed to delivering robust architecture and uncompromising quality from the first concept to the final deployment.</p>
+      <div class="about-links">
         <a href="https://github.com/thWebstr" class="about-link" target="_blank" rel="noopener">↗ GitHub</a>
         <a href="#" class="about-link" target="_blank" rel="noopener">↗ LinkedIn</a>
         <a href="#" class="about-link" target="_blank" rel="noopener">↗ Resume (PDF)</a>
@@ -374,10 +441,10 @@
   </div>
 
   <div class="about-skills">
-    <div class="about-section-title">Technical Skills</section>
+    <div class="about-section-title">Technical Skills</div>
     <div class="skills-grid">
       <div class="skill-group reveal">
-        <div class="skill-group-label">Frontend</section>
+        <div class="skill-group-label">Frontend</div>
         <div class="skill-tags">
           <span class="skill-tag">HTML5</span>
           <span class="skill-tag">CSS3</span>
@@ -386,10 +453,10 @@
           <span class="skill-tag">Vite</span>
           <span class="skill-tag">Responsive Design</span>
           <span class="skill-tag">Animations</span>
-        </section>
-      </section>
+        </div>
+      </div>
       <div class="skill-group reveal rd1">
-        <div class="skill-group-label">Backend & Data</section>
+        <div class="skill-group-label">Backend & Data</div>
         <div class="skill-tags">
           <span class="skill-tag">Node.js</span>
           <span class="skill-tag">Express</span>
@@ -397,8 +464,8 @@
           <span class="skill-tag">REST APIs</span>
           <span class="skill-tag">Postman</span>
           <span class="skill-tag">Push/SMS/Email APIs</span>
-        </section>
-      </section>
+        </div>
+      </div>
       <div class="skill-group reveal rd2">
         <div class="skill-group-label">Tools & Workflow</div>
         <div class="skill-tags">
@@ -416,81 +483,81 @@
   </div>
 
   <div class="about-experience">
-    <div class="about-section-title">Experience</section>
+    <div class="about-section-title">Experience</div>
     <div class="exp-items">
       <div class="exp-item reveal">
-        <div class="exp-period">2024 — Present</section>
+        <div class="exp-period">2024 — Present</div>
         <div>
-          <div class="exp-role">Freelance Web Designer & Developer</section>
-          <div class="exp-company">The Webstr</section>
-          <div class="exp-desc">Independent studio building bespoke websites and web applications for international clients across the UK, US, Canada, and Europe. Minimum engagement: $600. Projects span redesigns, new builds, SaaS tools, and editorial concepts.</section>
-        </section>
-        <div class="exp-type">Freelance</section>
-      </section>
+          <div class="exp-role">Freelance Web Designer & Developer</div>
+          <div class="exp-company">The Webstr</div>
+          <div class="exp-desc">Independent studio building bespoke websites and web applications for international clients across the UK, US, Canada, and Europe. Minimum engagement: $600. Projects span redesigns, new builds, SaaS tools, and editorial concepts.</div>
+        </div>
+        <div class="exp-type">Freelance</div>
+      </div>
       <div class="exp-item reveal rd1">
-        <div class="exp-period">2024</section>
+        <div class="exp-period">2024</div>
         <div>
-          <div class="exp-role">Frontend & API Contributor</section>
-          <div class="exp-company">T-YAP · Transport Payment Platform</section>
-          <div class="exp-desc">Contributed to a live digital transport payment system. Led API testing with Postman, identified endpoint and OTP delivery bugs in the deployed environment, and contributed to backend notification system work including push, SMS, and email integrations.</section>
-        </section>
-        <div class="exp-type">Contract</section>
-      </section>
+          <div class="exp-role">Frontend & API Contributor</div>
+          <div class="exp-company">T-YAP · Transport Payment Platform</div>
+          <div class="exp-desc">Contributed to a live digital transport payment system. Led API testing with Postman, identified endpoint and OTP delivery bugs in the deployed environment, and contributed to backend notification system work including push, SMS, and email integrations.</div>
+        </div>
+        <div class="exp-type">Contract</div>
+      </div>
       <div class="exp-item reveal rd2">
-        <div class="exp-period">2024</section>
+        <div class="exp-period">2024</div>
         <div>
-          <div class="exp-role">Backend Notification Engineer</section>
-          <div class="exp-company">TIAP · Equity-Based Startup</section>
-          <div class="exp-desc">Equity-based contribution to an early-stage startup. Built out the notification infrastructure — push notifications, SMS delivery, and email API integration. Operated as a founding technical contributor.</section>
-        </section>
-        <div class="exp-type">Equity</section>
-      </section>
-    </section>
-  </section>
+          <div class="exp-role">Backend Notification Engineer</div>
+          <div class="exp-company">TIAP · Equity-Based Startup</div>
+          <div class="exp-desc">Equity-based contribution to an early-stage startup. Built out the notification infrastructure — push notifications, SMS delivery, and email API integration. Operated as a founding technical contributor.</div>
+        </div>
+        <div class="exp-type">Equity</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ══════════ CONTACT ══════════ -->
 <section id="contact" class="page">
   <div class="contact-wrap">
     <div class="contact-left reveal">
-      <div class="contact-eyebrow">Get In Touch</section>
+      <div class="contact-eyebrow">Get In Touch</div>
       <h2 class="contact-heading">Let's build<br>something<br><em>together.</em></h2>
       <p class="contact-subtext">Whether you have a project in mind, a role to fill, or just want to see if we'd be a good fit — my inbox is open. I respond within 24 hours.</p>
 
       <div class="contact-channels">
         <a href="mailto:hello@thewebstr.com" class="contact-channel">
           <div class="contact-channel-left">
-            <div class="contact-channel-label">Email</section>
-            <div class="contact-channel-value">hello@thewebstr.com</section>
-          </section>
-          <div class="contact-channel-arrow">↗</section>
+            <div class="contact-channel-label">Email</div>
+            <div class="contact-channel-value">thWebstr@gmail.com</div>
+          </div>
+          <div class="contact-channel-arrow">↗</div>
         </a>
         <a href="https://github.com/thWebstr" class="contact-channel" target="_blank" rel="noopener">
           <div class="contact-channel-left">
-            <div class="contact-channel-label">GitHub</section>
-            <div class="contact-channel-value">github.com/thWebstr</section>
-          </section>
-          <div class="contact-channel-arrow">↗</section>
+            <div class="contact-channel-label">GitHub</div>
+            <div class="contact-channel-value">github.com/thWebstr</div>
+          </div>
+          <div class="contact-channel-arrow">↗</div>
         </a>
+        <!-- <a href="#" class="contact-channel">
+          <div class="contact-channel-left">
+            <div class="contact-channel-label">LinkedIn</div>
+            <div class="contact-channel-value">linkedin.com/in/thewebstr</div>
+          </div>
+          <div class="contact-channel-arrow">↗</div>
+        </a> -->
         <a href="#" class="contact-channel">
           <div class="contact-channel-left">
-            <div class="contact-channel-label">LinkedIn</section>
-            <div class="contact-channel-value">linkedin.com/in/thewebstr</section>
-          </section>
-          <div class="contact-channel-arrow">↗</section>
+            <div class="contact-channel-label">Instagram</div>
+            <div class="contact-channel-value">@thwebstr</div>
+          </div>
+          <div class="contact-channel-arrow">↗</div>
         </a>
-        <a href="#" class="contact-channel">
-          <div class="contact-channel-left">
-            <div class="contact-channel-label">Instagram</section>
-            <div class="contact-channel-value">@thewebstr</section>
-          </section>
-          <div class="contact-channel-arrow">↗</section>
-        </a>
-      </section>
-    </section>
+      </div>
+    </div>
 
     <div class="contact-right reveal rd2">
-      <div class="form-cta-text">Or send a direct message →</section>
+      <div class="form-cta-text">Or send a direct message →</div>
       <form class="contact-form">
         <div class="form-row">
           <div class="form-group">
