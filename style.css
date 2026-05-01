@@ -43,7 +43,8 @@ html {
 body {
   background: var(--bg);
   color: var(--off-white);
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   overflow-x: hidden;
   cursor: none;
 }
@@ -160,7 +161,7 @@ nav::after {
   background: none;
   border: none;
   cursor: none;
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -199,7 +200,7 @@ nav::after {
   padding: 10px 22px;
   border: none;
   cursor: none;
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: background 0.2s;
 }
 .nav-hire:hover {
@@ -290,6 +291,7 @@ nav::after {
 }
 .home-eyebrow span {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -297,7 +299,8 @@ nav::after {
 }
 
 .home-headline {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: clamp(52px, 6.5vw, 96px);
   font-weight: 400;
   line-height: 0.95;
@@ -309,7 +312,7 @@ nav::after {
 }
 .home-headline .tag {
   display: inline-block;
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 0.38em;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -345,7 +348,7 @@ nav::after {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
   border: none;
   cursor: none;
   transition: background 0.2s;
@@ -363,7 +366,7 @@ nav::after {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: none;
   cursor: none;
   transition:
@@ -414,6 +417,7 @@ nav::after {
   position: relative;
   z-index: 1;
   filter: grayscale(20%) contrast(1.05);
+  transform: scaleX(-1);
 }
 .home-portrait-tag {
   position: absolute;
@@ -422,6 +426,7 @@ nav::after {
   background: var(--violet);
   color: #fff;
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -434,7 +439,7 @@ nav::after {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 40px 0;
+  padding: 40px 10vw;
   position: relative;
   z-index: 2;
   border-top: 1px solid var(--violet-border);
@@ -442,7 +447,8 @@ nav::after {
 .home-stat {
 }
 .home-stat-num {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 40px;
   font-weight: 400;
   color: var(--violet-light);
@@ -450,6 +456,7 @@ nav::after {
 }
 .home-stat-label {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -478,6 +485,7 @@ nav::after {
 }
 .page-title-eyebrow {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 10px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -494,7 +502,8 @@ nav::after {
   background: var(--violet);
 }
 .page-title {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: clamp(40px, 5vw, 68px);
   font-weight: 400;
   line-height: 1;
@@ -505,6 +514,7 @@ nav::after {
 }
 .page-title-right {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 10px;
   letter-spacing: 0.15em;
   color: var(--dimmer);
@@ -523,7 +533,7 @@ nav::after {
   background: none;
   border: 1px solid var(--violet-border);
   color: var(--muted);
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -617,6 +627,7 @@ nav::after {
   left: 24px;
   z-index: 2;
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -646,6 +657,7 @@ nav::after {
 
 .work-card-cat {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -653,7 +665,8 @@ nav::after {
   margin-bottom: 8px;
 }
 .work-card-name {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 28px;
   font-weight: 400;
   color: var(--white);
@@ -713,6 +726,7 @@ nav::after {
 }
 .tech-badge {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 8px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -740,7 +754,8 @@ nav::after {
 }
 
 .services-heading {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: clamp(36px, 4vw, 58px);
   font-weight: 400;
   line-height: 1;
@@ -765,13 +780,15 @@ nav::after {
 }
 .services-min-label {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 10px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--dimmer);
 }
 .services-min-num {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 48px;
   font-weight: 400;
   color: var(--violet-light);
@@ -809,13 +826,15 @@ nav::after {
 
 .service-row-num {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 11px;
   color: var(--violet);
   letter-spacing: 0.1em;
   padding-top: 6px;
 }
 .service-row-name {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 30px;
   font-weight: 400;
   line-height: 1.1;
@@ -826,7 +845,7 @@ nav::after {
 }
 .service-row-name small {
   display: block;
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 11px;
   font-style: normal;
   color: var(--muted);
@@ -840,7 +859,8 @@ nav::after {
   padding-top: 6px;
 }
 .service-row-price {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 26px;
   font-weight: 400;
   color: var(--violet-pale);
@@ -851,6 +871,7 @@ nav::after {
 .service-row-price small {
   display: block;
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   font-style: normal;
   color: var(--dimmer);
@@ -868,7 +889,8 @@ nav::after {
   gap: 80px;
 }
 .services-includes-title {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 36px;
   font-style: italic;
   color: var(--muted);
@@ -942,6 +964,7 @@ nav::after {
 }
 .process-icon {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 14px;
   color: var(--violet);
   margin-bottom: 24px;
@@ -949,7 +972,8 @@ nav::after {
   border-bottom: 1px solid var(--violet-border);
 }
 .process-title {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 28px;
   color: var(--off-white);
   margin-bottom: 12px;
@@ -1006,6 +1030,7 @@ nav::after {
 }
 .author-role {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 10px;
   color: var(--violet-light);
   margin-top: 4px;
@@ -1052,6 +1077,7 @@ nav::after {
   bottom: 24px;
   left: 24px;
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 10px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1062,6 +1088,7 @@ nav::after {
 }
 .about-intro-eyebrow {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 10px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -1079,7 +1106,8 @@ nav::after {
 }
 
 .about-intro-headline {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: clamp(36px, 4vw, 56px);
   font-weight: 400;
   line-height: 1.05;
@@ -1109,6 +1137,7 @@ nav::after {
 }
 .about-link {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1135,6 +1164,7 @@ nav::after {
 }
 .about-section-title {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 10px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -1163,6 +1193,7 @@ nav::after {
 }
 .skill-group-label {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -1212,6 +1243,7 @@ nav::after {
 }
 .exp-period {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.08em;
   color: var(--dimmer);
@@ -1224,7 +1256,8 @@ nav::after {
   margin-bottom: 4px;
 }
 .exp-company {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 18px;
   font-style: italic;
   color: var(--violet-light);
@@ -1237,6 +1270,7 @@ nav::after {
 }
 .exp-type {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1272,6 +1306,7 @@ nav::after {
 }
 .contact-eyebrow {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 10px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -1289,7 +1324,8 @@ nav::after {
 }
 
 .contact-heading {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: clamp(40px, 5vw, 68px);
   font-weight: 400;
   line-height: 1;
@@ -1330,6 +1366,7 @@ nav::after {
 }
 .contact-channel-label {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1360,13 +1397,15 @@ nav::after {
   font-size: 13px;
   letter-spacing: 0.05em;
   color: var(--off-white);
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-style: italic;
   margin-bottom: 24px;
   display: block;
 }
 .form-label {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 9px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1381,7 +1420,7 @@ nav::after {
   background: var(--bg2);
   border: 1px solid var(--violet-border);
   color: var(--off-white);
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   padding: 14px 18px;
   transition: border-color 0.2s;
@@ -1415,7 +1454,7 @@ nav::after {
   color: #fff;
   border: none;
   padding: 16px 32px;
-  font-family: "Syne", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1442,12 +1481,14 @@ footer {
 }
 .footer-left {
   font-family: "DM Mono", monospace;
+  font-weight: 500;
   font-size: 10px;
   letter-spacing: 0.12em;
   color: var(--dimmer);
 }
 .footer-right {
-  font-family: "Instrument Serif", serif;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 13px;
   font-style: italic;
   color: var(--dimmer);
