@@ -29,66 +29,15 @@ function setupCursorHovers() {
   });
 }
 
-// PAGE ROUTING
-function showPage(name, pushState = true) {
-  const targetPage = document.getElementById('page-'+name);
-  if (!targetPage) return;
-
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nav-links button').forEach(b => {
-    b.classList.remove('active');
-    b.setAttribute('aria-current', 'false');
-  });
-  
-  const targetNav = document.getElementById('nav-'+name);
-  
-  targetPage.classList.add('active');
-  if (targetNav) {
-    targetNav.classList.add('active');
-    targetNav.setAttribute('aria-current', 'page');
-  }
-  
-  // A11y: Update status and manage focus
-  const statusEl = document.getElementById('page-status');
-  if (statusEl) statusEl.textContent = `Moved to ${name} page`;
-  
-  window.scrollTo({top:0,behavior:'smooth'});
-  
-  if (pushState) {
-    history.pushState({page: name}, "", name === 'home' ? "/" : `#${name}`);
-  }
-  
-  triggerReveals();
-}
-
-// Handle Browser Back/Forward
-window.addEventListener('popstate', (e) => {
-  const page = e.state ? e.state.page : 'home';
-  showPage(page, false);
-});
-
-// Handle Initial Hash
-function handleInitialPage() {
-  const hash = window.location.hash.substring(1);
-  if (hash) {
-    showPage(hash, false);
-  } else {
-    showPage('home', false);
-  }
-}
-
 // SCROLL REVEAL
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); } });
 }, {threshold:0.08, rootMargin:'0px 0px -40px 0px'});
 
-function triggerReveals() {
-  setTimeout(() => {
-    document.querySelectorAll('.page.active .reveal').forEach(el => {
-      el.classList.remove('in');
-      revealObserver.observe(el);
-    });
-  }, 50);
+function initReveals() {
+  document.querySelectorAll('.reveal').forEach(el => {
+    revealObserver.observe(el);
+  });
 }
 
 // NAV on scroll
@@ -144,7 +93,7 @@ function setupContactForm() {
 
 // INITIALIZATION
 document.addEventListener('DOMContentLoaded', () => {
-  handleInitialPage();
+  initReveals();
   setupCursorHovers();
   setupWorkFilters();
   setupContactForm();
